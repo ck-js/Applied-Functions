@@ -58,6 +58,12 @@ function getDiscount(age) {
 const discount = getDiscount(69);
 console.log(discount);
 
+function displayBeat(sound) {
+for (let i = 0; i < sound.length; i++) {
+    console.log(sound[i]);
+}
+}
+displayBeat("Untz");
 
 
 

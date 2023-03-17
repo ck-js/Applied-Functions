@@ -60,17 +60,25 @@ console.log(discount);
 
 function displayBeat(sound) {
 for (let i = 0; i < sound.length; i++) {
-    console.log(sound[i]);
+    console.log(sound);
 }
 }
 displayBeat("Untz");
 
+function calculateMultiple(multiplier) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(i * multiplier);
+    }
+}
+calculateMultiple(5);
+calculateMultiple(8);
 
-
-
-
-
-
+function displayDays(month, year) {
+    for (let i = 0; i<=31;i++) {
+        console.log(i + " " + month + " " + year);
+    }
+}
+displayDays("January", "2023");
 
 
 

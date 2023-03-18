@@ -80,6 +80,36 @@ function displayDays(month, year) {
 }
 displayDays("January", "2023");
 
+function displayLoop(times) {
+    for (let i = 0; i < times; i++) {
+        console.log("Ja");
+    }
+}
+displayLoop(3);
+
+function displayDaysLeft(days) {
+    for (let i = days; i <=31; i++) {
+        console.log(i + " left");
+    }
+}
+displayDaysLeft(24);
+
+const grades = [45, 35, 66];
+const search = 66;
+function searchGrades(grade, search) {
+for (let i = 0; i < grade.length; i++) {
+    if (grade[i] === search) {
+        console.log("The grade matches the search");
+    } else {
+        console.log("The grade does not match the search");
+    }
+}
+console.log("Thanks for searching");
+}
+searchGrades(grades, search)
+
+
+
 
 
 

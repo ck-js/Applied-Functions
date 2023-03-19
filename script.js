@@ -100,16 +100,23 @@ function searchGrades(grade, search) {
 for (let i = 0; i < grade.length; i++) {
     if (grade[i] === search) {
         console.log("The grade matches the search");
-    } else {
-        console.log("The grade does not match the search");
-    }
+    } 
 }
 console.log("Thanks for searching");
 }
 searchGrades(grades, search)
 
-
-
+const arr1 = [22, 64, 72, 95];
+const arr2 = [1, 64, 38, 74];
+function compareArrays(arr1, arr2) {
+for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] === arr2[i]) {
+        console.log(arr1[i] + " matches an element in array 2 " + arr2[i]);
+    }
+}
+return "No matches found";
+}
+compareArrays(arr1, arr2);
 
 
 

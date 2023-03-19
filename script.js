@@ -118,5 +118,28 @@ return "No matches found";
 }
 compareArrays(arr1, arr2);
 
+const prices = [1000, 2000, 5000, 10000];
+const discount2 = 0.15;
+function applyDiscount(price, discount) {
+    for (let i = 0; i < prices.length; i++) {
+        console.log(price[i] * discount);
+    }
+}
+applyDiscount(prices, discount2);
+
+const discount3 = [0.05, 0.10, 0.15, 0.20];
+function calculateDiscountArray(prices, discounts) {
+            const discountsArray = [];
+            for (let i = 0; i < prices.length; i++) {
+                discountsArray[i] = prices[i] * discounts[i];            
+            }
+            console.log("The discounts are applicable as follows: "
+             + discountsArray);
+            
+} 
+calculateDiscountArray(prices, discount3);
+
+
+
 
 
